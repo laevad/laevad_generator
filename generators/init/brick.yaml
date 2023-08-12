@@ -1,4 +1,4 @@
-name: hello_world
+name: init
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -25,4 +25,5 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 #  * an optional separator (list only)
+
 vars:
