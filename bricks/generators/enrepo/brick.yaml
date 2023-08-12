@@ -1,5 +1,5 @@
-name: entity
-description: A new brick created with the Mason CLI.
+name: enrepo
+description: generate entity and repository
 
 # The following defines the brick repository url.
 # Uncomment and update the following line before publishing the brick.
@@ -31,3 +31,28 @@ vars:
     description: Name of the entity
     default: user
     prompt: What is the name of the entity?
+  get:
+    type: boolean
+    description: Whether to generate a get method
+    default: true
+    prompt: Generate a get method?
+  getAll:
+    type: boolean
+    description: Whether to generate a getAll method
+    default: false
+    prompt: Generate a getAll method?
+  add:
+    type: boolean
+    description: Whether to generate an add method
+    default: false
+    prompt: Generate an add method?
+  update:
+    type: boolean
+    description: Whether to generate an update method
+    default: false
+    prompt: Generate an update method?
+  delete:
+    type: boolean
+    description: Whether to generate a delete method
+    default: false
+    prompt: Generate a delete method?

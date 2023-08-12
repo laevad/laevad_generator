@@ -3,5 +3,5 @@ bricks:
     path: bricks/examples/hello_world
   init:
     path: bricks/generators/init
-  entity:
-    path: bricks/generators/entity
+  enrepo:
+    path: bricks/generators/enrepo
