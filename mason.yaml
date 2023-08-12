@@ -5,3 +5,5 @@ bricks:
     path: bricks/generators/init
   enrepo:
     path: bricks/generators/enrepo
+  usecase:
+    path: bricks/generators/usecase
