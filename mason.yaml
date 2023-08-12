@@ -1,5 +1,5 @@
 bricks:
   hello_world:
-    path: examples/hello_world
+    path: bricks/examples/hello_world
   init:
-    path: generators/init
+    path: bricks/generators/init
