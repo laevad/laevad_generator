@@ -1,16 +1,17 @@
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 
-import './src/app/pages/home/home_view.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     FlutterCleanArchitecture.debugModeOn();
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'My App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: createMaterialColor(const Color(0xFF2196F3)),
@@ -25,9 +26,11 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Clean Architecture'),
+          title: const Text('My App'),
         ),
-        body: HomeView(),
+        body: const Center(
+          child: Text('Hello World'),
+        ),
       ),
     );
   }
