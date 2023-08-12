@@ -26,3 +26,8 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
+  name:
+    type: string
+    description: Your name
+    default: Dash
+    prompt: What is your name?
