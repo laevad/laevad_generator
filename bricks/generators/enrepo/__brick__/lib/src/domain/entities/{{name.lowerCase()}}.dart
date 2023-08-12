@@ -2,7 +2,7 @@ class {{name.pascalCase()}} {
   final String id;
   final String name;
 
-  {{name.pascalCase()}}({this.id, this.name});
+  {{name.pascalCase()}}({required this.id,required this.name});
 
   factory {{name.pascalCase()}}.fromJson(Map<String, dynamic> json) {
     return {{name.pascalCase()}}(
