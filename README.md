@@ -22,10 +22,21 @@ Developing applications using Clean Architecture can be time-consuming due to th
 - **Layer Separation**: Establish clear boundaries between Domain, Data, and Presentation layers for better code organization.
 - **Boilerplate Reduction**: Save time by generating the initial code for different layers, allowing you to focus on implementing features.
 - **Customizable Templates**: Tailor templates to fit your specific project requirements.
+- **Follow Clean Architecture**: Explore the generated project structure and utilize the Clean Architecture principles in your development process.
 
+## More Info/Documentation (Coming Soon)
 
+Stay tuned for more comprehensive documentation and resources that will help you make the most out of the Flutter Clean Architecture Code Generator. The following content is in the works:
 
-3. **Follow Clean Architecture**: Explore the generated project structure and utilize the Clean Architecture principles in your development process.
+- Detailed usage examples for different use cases.
+- Explanations of the generated code and how it aligns with Clean Architecture principles.
+- Best practices for customizing the templates and configurations to match your project's requirements.
+- Troubleshooting guides to address common issues and challenges.
+
+The goal is to provide you with the resources you need for a smooth experience when using this code generator.
+
+If you have any immediate questions or need assistance, feel free to reach out by creating an issue in the repository.
+
 
 ## Contributing
 
