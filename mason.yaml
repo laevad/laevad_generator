@@ -9,3 +9,5 @@ bricks:
     path: bricks/generators/usecase
   page:
     path: bricks/generators/page
+  entity:
+    path: bricks/generators/entity
