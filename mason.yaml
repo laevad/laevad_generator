@@ -11,3 +11,5 @@ bricks:
     path: bricks/generators/page
   entity:
     path: bricks/generators/entity
+  repository:
+    path: bricks/generators/repository
