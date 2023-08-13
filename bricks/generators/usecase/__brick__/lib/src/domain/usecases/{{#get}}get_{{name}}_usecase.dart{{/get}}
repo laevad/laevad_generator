@@ -1,0 +1,42 @@
+import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
+
+import "dart:async";
+import "../entities/{{name.lowerCase()}}.dart";
+import "../repositories/{{name.lowerCase()}}s_repository.dart";
+
+
+
+class Get{{name.pascalCase()}}UseCase extends UseCase<Get{{name.pascalCase()}}UseCaseResponse, Get{{name.pascalCase()}}UseCaseParams> {
+  final {{name.pascalCase()}}sRepository repository;
+
+  Get{{name.pascalCase()}}UseCase(this.repository);
+
+  @override
+  Future<Stream<Get{{name.pascalCase()}}UseCaseResponse>> buildUseCaseStream(Get{{name.pascalCase()}}UseCaseParams? params) async {
+    final controller = StreamController<Get{{name.pascalCase()}}UseCaseResponse>();
+    try {
+      {{name.pascalCase()}} {{name.lowerCase()}} = await repository.get{{name.pascalCase()}}(params!.uid);
+      controller.add(Get{{name.pascalCase()}}UseCaseResponse({{name.lowerCase()}}));
+      logger.finest('Get{{name.pascalCase()}}UseCase successful.');
+      controller.close();
+    } catch (e) {
+      logger.severe('Get{{name.pascalCase()}}UseCase unsuccessful.', e);
+      // Trigger .onError
+      controller.addError(e);
+    }
+    return controller.stream;
+  }
+
+}
+
+/// Wrapping params inside an object makes it easier to change later
+class Get{{name.pascalCase()}}UseCaseParams {
+  final String uid;
+  Get{{name.pascalCase()}}UseCaseParams(this.uid);
+}
+
+/// Wrapping response inside an object makes it easier to change later
+class Get{{name.pascalCase()}}UseCaseResponse {
+  final {{name.pascalCase()}} {{name.lowerCase()}};
+  Get{{name.pascalCase()}}UseCaseResponse(this.{{name.lowerCase()}});
+}
