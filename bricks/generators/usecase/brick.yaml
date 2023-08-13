@@ -31,8 +31,3 @@ vars:
     description: user usecase name
     default: user
     prompt: What is the name of the usecase?
-  get:
-    type: boolean
-    description: whether to generate get usecase
-    default: true
-    prompt: Do you want to generate get usecase?
