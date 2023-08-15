@@ -1,6 +1,4 @@
 bricks:
-  hello_world:
-    path: bricks/examples/hello_world
   init:
     path: bricks/generators/init
   enrepo:
