@@ -1,6 +1,6 @@
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 
-class _{{observer.snakeCase()}}UseCaseObserver
+class _{{observer.pascalCase()}}UseCaseObserver
     extends Observer
     // TODO: add usecase observer <UseCaseResponse>
      {
