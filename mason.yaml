@@ -11,3 +11,5 @@ bricks:
     path: bricks/generators/entity
   repository:
     path: bricks/generators/repository
+  observer:
+    path: bricks/generators/observer
